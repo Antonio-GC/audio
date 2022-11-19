@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #141414;
+  --white: #ffffff;
+  --orange: #d87d4a;
+  --orange-white: #fbaf85;
+  --gray: #979797;
+  --gray-white: #f1f1f1;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.container {
+  border: #141414 solid;
+  width: 100%;
+  height: 100%;
+}
+
+.container__header {
+  
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  padding: 20px 100px 70px 100px;
+  background-image: url(/assets/home/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+  border-bottom: var(--gray) solid 0.1px;
+}
+
+.nav__link {
+  display: flex;
+  gap: 30px;
+}
+
+.nav__link--text {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.info__action {
+  padding: 50px 630px 115px 0px;
+}
+
+.info__text {
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text-title {
+  font-size: 40px;
+}
+
+.btn__info {
+  padding: 15px 40px 15px 40px;
+  background-color: var(--orange);
+  color: var(--gray-white);
+  font-weight: bold;
+}
+
+.container__article {
+  display: grid;
+  padding: 230px 165px 70px 165px;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 204px;
+  gap: 25px;
+}
+
+.card {
+  background-color: var(--gray-white);
+}
+
+.card__box {
+  position: relative;
+}
+
+.card__imagen {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -77px;
+  left: 70px;
+}
+
+.card__action {
+  padding-top: 130px;
+  text-align: center;
+}
+
+.card__text {
+  margin-bottom: 10px;
+}
+
+.btn__card {
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.btn__card--orange {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.info {
+  display: grid;
+  padding: 150px 165px 70px 165px;
+  grid-template-columns: 555px 550px;
+  grid-template-rows: 500px;
+}
+
+.info__box--border {
+  background-color: var(--orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.info__imagen {
+  position: absolute;
+  position: absolute;
+  top: 99px;
+  right: -15px;
+  height: 614px;
+  width: 565px;
+}
+
+.info__box--radius {
+  background-color: var(--orange);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 114px 50px 0px 100px;
+  color: var(--white);
+}
+
+.box__title {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0.9em;
+  margin-bottom: 35px;
+}
+
+.box__text {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.btn__box {
+  padding: 15px 40px 15px 40px;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.speakers {
+  padding: 34px 165px 70px 165px;
+}
+
+.speakers__item {
+  background-image: url(/assets/home/desktop/Bitmap.png);
+  min-width: 600px;
+  min-height: 320px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 90px 0px 0px 130px;
+}
+
+.speakers__box {
+  display: grid;
+  grid-template-columns: repeat(2, 540px);
+  grid-template-rows: 235px;
+  gap: 25px;
+}
+
+.speakers__imagen {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.speakers__title {
+  margin-bottom: 30px;
+}
+
+.btn__speakers {
+  background-color: transparent;
+  border: var(--black) solid 1px;
+  padding: 15px 25px 15px 15px;
+  font-weight: bold;
+}
+
+.speakers__action {
+  padding: 70px 0px 0px 110px;
+  border-radius: 5px;
+  background-color: var(--gray-white);
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(2, 550px);
+  grid-template-rows: 600px;
+  padding: 100px 165px 160px 165px;
+}
+
+.information__section {
+  padding: 137px 0 0px 0;
+}
+
+.information__title {
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1em;
+  font-size: 45px;
+}
+
+.information__title--orange {
+  color: var(--orange);
+}
+
+.information__text {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: normal;
+}
+
+.information__imagen {
+  background-image: url(/assets/shared/desktop/image-best-gear.jpg);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social {
+  background-color: var(--black);
+  padding: 100px 165px 0px 165px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.social__logo {
+  margin-bottom: 20px;
+}
+
+.social__text {
+  color: var(--gray-white);
+  margin-bottom: 40px;
+}
+
+
+.social__media {
+  
+ display: flex;
+    flex-direction: column;
+    gap: 90px
+}
+
+.social__link {
+  display: flex;
+  gap: 30px;
+}
+
+.social__link--action {
+  color: var(--gray-white);
+}
+
+.social__redes{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
